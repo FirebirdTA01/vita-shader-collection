@@ -3,7 +3,7 @@ SOURCES = src
 INCLUDES = include
 SHDIR		 = shaders
 SHADERS   := $(foreach dir,$(SHDIR), $(wildcard $(dir)/*.cg))
-
+#just a comment so there's something to push and I can test Travis CI
 
 GXPS       = $(SHADERS:.cg=.gxp)
 OBJS       = $(SHADERS:.cg=.o)
